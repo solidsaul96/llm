@@ -31,7 +31,7 @@ def tutor_virtual():
         try:
             print(f"\nEstoy analizando '{tema}'... Por favor, espera.")
             
-            # Usamos el modelo gemini-2.5-flash según tu panel de control
+            # Usamos el modelo gemini-2.5-flash 
             response = client.models.generate_content(
                 model="gemini-2.5-flash",
                 contents=f"""Actúa como un tutor experto en enfermería. 
@@ -44,7 +44,7 @@ def tutor_virtual():
             print(response.text)
             print("="*40)
             
-            # Simulación de registro de actividad técnica
+            # Simulación de registro de actividad 
             print(f"\n[INFO]: Concepto '{tema}' registrado en tu historial.")
             print(f"[INFO]: Generando recomendaciones de repaso...\n")
 
